@@ -1,0 +1,51 @@
+/* Simple responsive layout inspired by example site */
+:root{
+	--bg1: #f6fbff;
+	--card-bg: #ffffff;
+	--accent1: #7cc6ff;
+	--accent2: #9ad3bc;
+	--muted: #6b7280;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family: Poppins, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background: #05060a;
+	color:#fff;
+}
+.card{background:transparent;box-shadow:none;padding:0;border-radius:0;max-width:1200px;margin:0 auto}
+
+/* Hero similar to reference */
+.hero{position:relative;overflow:hidden;border-radius:10px;background:#020203;padding:56px 36px}
+.hero-inner{display:flex;align-items:center;gap:36px}
+.hero-left{flex:1;position:relative;z-index:2}
+.top-icons{position:absolute;right:28px;top:18px;display:flex;gap:10px;z-index:3}
+.top-icons .icon{width:40px;height:40px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.top-icons .ig{background: radial-gradient(circle at 30% 30%, #feda75 0%, #fa7e1e 20%, #d62976 50%, #962fbf 70%)}
+.top-icons .tt{background:linear-gradient(90deg,#00f2ea,#0061ff)}
+.top-icons .wa{background:linear-gradient(90deg,#25D366,#128C7E)}
+
+.hero h1{margin:0;font-size:56px;line-height:1.02;font-weight:800;text-shadow:0 30px 60px rgba(0,0,0,0.6);max-width:720px}
+.hero .accent{background:linear-gradient(90deg,#ff2e80,#ff7ab6);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .lead{color:rgba(255,255,255,0.85);max-width:640px;margin-top:18px;font-size:16px}
+.btn{display:inline-block;padding:12px 30px;border-radius:999px;text-decoration:none}
+.btn.cta{background:#ff2e80;color:#fff;font-weight:700;box-shadow:0 20px 40px rgba(255,46,128,0.22);margin-top:28px}
+
+.hero-right{flex:0 0 48%;height:420px;border-radius:10px;overflow:hidden;box-shadow:inset 0 0 80px rgba(0,0,0,0.4)}
+.hero-right img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85) saturate(0.95)}
+
+.sections{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card-block{background:#0b0b0d;padding:18px;border-radius:10px}
+.card-block h2{margin:0 0 10px}
+
+.footer{margin-top:20px;padding-top:10px;color:rgba(255,255,255,0.6);font-size:13px;text-align:center}
+
+@media (max-width:900px){
+	.hero-inner{flex-direction:column-reverse}
+	.hero-right{width:100%;height:300px}
+	.hero h1{font-size:36px}
+	.sections{grid-template-columns:1fr}
+	.top-icons{right:18px}
+}
+

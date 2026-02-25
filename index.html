@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Portfolio — Seu Nome</title>
+	<link rel="stylesheet" href="vigiacre.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<meta name="description" content="Página pessoal - layout inspirado" />
+</head>
+<body>
+	<div class="topbar" role="banner" aria-hidden="false">
+		<div class="topbar-inner">
+			<a class="top-icon ig" href="#" title="Instagram">ig</a>
+			<a class="top-icon tt" href="#" title="TikTok">tt</a>
+			<a class="top-icon wa" href="#" title="WhatsApp">wa</a>
+		</div>
+	</div>
+
+	<main class="card">
+		<header class="hero">
+			<div class="hero-inner">
+				<div class="hero-left">
+					<h1>A força da sua marca <br>começa na <span class="accent">Presença<br>Digital.</span></h1>
+					<p class="lead">Toda marca tem uma história. E o meu papel é fazer com que a sua marca seja ouvida, vista e lembrada. Estratégia, criatividade e propósito para transformar sua presença digital em algo que inspira, aproxima e vende.</p>
+
+					<a class="btn cta" href="#contact">Entrar em contato</a>
+				</div>
+
+				<div class="hero-right" aria-hidden="true">
+					<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80" alt="">
+				</div>
+			</div>
+		</header>
+
+		<section class="grid sections">
+			<article class="card-block">
+				<h2>Sobre</h2>
+				<p>Breve descrição sobre você. Use este espaço para contar o que faz e seu foco profissional.</p>
+			</article>
+
+			<article class="card-block">
+				<h2>Projetos</h2>
+				<ul class="projects">
+					<li class="project">Projeto 1 — breve descrição</li>
+					<li class="project">Projeto 2 — breve descrição</li>
+					<li class="project">Projeto 3 — breve descrição</li>
+				</ul>
+			</article>
+
+			<article id="contact" class="card-block">
+				<h2>Contato</h2>
+				<p>Você pode incluir um formulário, e-mail ou links sociais.</p>
+			</article>
+		</section>
+
+		<footer class="footer">© <span id="year"></span> Seu Nome — Layout inspirado</footer>
+	</main>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
